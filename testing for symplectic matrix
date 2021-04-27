@@ -1,0 +1,54 @@
+# code work in progress
+# code for input into matrix
+
+import sys
+import numpy as np
+a=int(input("Enter number of rows"))
+if (a %2) == 0:#checking is a 2n*2n matrix
+    print()
+else:
+    print("Not a 2n*2n matrix")
+    sys.exit()
+b=int(input("Enter number of columns"))
+if (b %2) == 0:#checking is a 2n*2n matrix
+    print()
+else:
+    print("Not a 2n*2n matrix")
+    sys.exit()
+m1=[]                    
+for i in range(a):       #loop for rows
+    c=[]                 
+    for j in range(b):   #loop for columns
+        j=int(input("Enter Number in row "+str(i+1)+" column "+str(j+1)+""))
+        c.append(j)
+    print()
+    m1.append(c)
+a1 = np.matrix(m1)
+for i in range(a):
+    for j in range(b):
+        print(m1[i][j], end = " ")
+    print()
+
+#creating nxn identity matrix
+n=int(a/2)
+q=[]
+for i in range(n):
+    w=[]
+    for j in range(n):
+        if(j==i):
+            j = 1
+        else:
+            j = 0
+        w.append(j)
+    q.append(w)
+    m = np.matrix(q)
+fill = np.zeros((n,n))
+invm = -m
+s1=np.hstack((-m,fill))
+s2=np.hstack((fill,m))
+s3=np.vstack((s2,s1))
+s4=np.matrix(s3)
+print(s4)
+
+print("if output matrix shows all true then it is a symplectic matrix")
+s4==s4*a1*a1.T
