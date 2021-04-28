@@ -16,7 +16,8 @@ def checkSimp(matrix):
     my_dict['omega'] = np.block([[zeros, identity_m], 
                                  [-identity_m, zeros]])
     #final check for symplectic matrix
-    if (my_dict['omega'] == matrix.T@my_dict['omega']@matrix).all:
+    r_side = matrix.T@my_dict['omega']@matrix
+    if (my_dict['omega'] == r_side).all():
         my_dict['is_simplectic'] = True
     else:
         my_dict['is_simplectic'] = False
