@@ -1,4 +1,4 @@
-def checksimp(matrix):
+def check_simplecticity(matrix, precision = 10 ** -12):
     '''This is to check wether a matrix is simplectic'''
     my_dict = {}
     #imput has to be in np.array()
@@ -13,9 +13,8 @@ def checksimp(matrix):
     identity_m = np.identity(identity_n)
     zeros = np.zeros((identity_n, identity_n))
     my_dict['omega'] = np.block([[zeros, identity_m], 
-                                 [-identity_m, zeros]])
+                                [-identity_m, zeros]])
     #final check for symplectic matrix
-    precision = 10 ** -12
     l_side = matrix.T @ my_dict['omega'] @ matrix
     if (l_side - my_dict['omega'] < precision).all():
         my_dict['is_simplectic'] = True
