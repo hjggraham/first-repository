@@ -6,6 +6,7 @@ def check_symplecticity(matrix, precision=10 ** -12):
     my_dict = {}
     my_dict['is_square'] = False
     my_dict['is_symplectic'] = False
+    print("Hello")
 
     try:
         my_dict['dim_a'], my_dict['dim_b'] = np.shape(matrix)
