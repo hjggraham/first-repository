@@ -1,3 +1,0 @@
-numpy
-sphinx
-sphinx-autobuild
