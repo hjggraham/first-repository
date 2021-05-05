@@ -2,7 +2,7 @@ import numpy as np
 
 
 def check_symplecticity(matrix, precision=10 ** -12):
-    '''This is to check wether a matrix is simplectic'''
+    '''This is to check wether a matrix is simplectic.'''
     my_dict = {}
     my_dict['is_square'] = False
     my_dict['is_symplectic'] = False
