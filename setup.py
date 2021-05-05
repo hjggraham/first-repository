@@ -8,8 +8,6 @@ setuptools.setup(
     author="H Graham",
     author_email="hamish(at)graham.gb.net",
     description="Code to determine a symplectic matrix.",
-    long_description=long_description,
-    long_description_content_type="text/x-rst",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
