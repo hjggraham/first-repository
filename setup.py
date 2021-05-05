@@ -5,8 +5,6 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="alfa",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
     author="H Graham",
     author_email="hamish(at)graham.gb.net",
     description="Code to determine a symplectic matrix.",
