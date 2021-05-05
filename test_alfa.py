@@ -47,3 +47,8 @@ def test_omega():
 def test_square2():
     my_array = np.array([[1, 0], [2, 1]])
     assert hg.check_symplecticity(my_array)['dim_a'], hg.check_symplecticity(my_array)['dim_b'] == np.shape(my_array)
+
+
+def test_exception():
+    with pytest.raises(Exception):
+        hg.check_symplecticity(np.array([1]))
