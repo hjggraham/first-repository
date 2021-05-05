@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Alfa's documentation!
-================================
+Alfa
+====
 .. image:: https://img.shields.io/codecov/gh/hjggraham/first-repository
    :target: https://app.codecov.io/gh/hjggraham/first-repository
    :alt: Codecov
