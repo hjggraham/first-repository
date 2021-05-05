@@ -4,4 +4,4 @@ API
 ``alfa``
 -------------
 
-.. autofunction:: alfa.check_symplecticity
+.. autofunction:: alfa.check_symplecticity()
