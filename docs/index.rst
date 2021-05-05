@@ -9,6 +9,15 @@ Welcome to Alfa's documentation!
    :target: https://app.codecov.io/gh/hjggraham/first-repository
    :alt: Codecov
 
+This is code to determine wether a matrix is simplectic.
+
+Installation
+------------
+
+.. code-block:: bash
+
+   pip install alfa.py
+   
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
