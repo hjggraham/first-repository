@@ -18,6 +18,7 @@ Installation
 
    pip install alfa.py
    
+  
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
