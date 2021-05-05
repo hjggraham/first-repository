@@ -1,7 +1,7 @@
 API
 ===
 
-``alfa``
+``alfa.py``
 -------------
 
 .. autofunction:: alfa.check_symplecticity()
