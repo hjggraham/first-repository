@@ -5,7 +5,7 @@
 
 Alfa
 ====
-.. image:: https://img.shields.io/codecov/gh/hjggraham/first-repository
+.. image:: https://img.shields.io/c/codecov/gh/hjggraham/first-repository
    :target: https://app.codecov.io/gh/hjggraham/first-repository
    :alt: Codecov
 
