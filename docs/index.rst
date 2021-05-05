@@ -5,6 +5,9 @@
 
 Welcome to Alfa's documentation!
 ================================
+.. image:: https://img.shields.io/codecov/gh/hjggraham/first-repository
+   :target: https://app.codecov.io/gh/hjggraham/first-repository
+   :alt: Codecov
 
 .. toctree::
    :maxdepth: 2
