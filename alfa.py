@@ -14,17 +14,11 @@ def check_symplecticity(matrix, precision=10 ** -12):
         True/False depending on whether it symplectic or not.
     Examples
     --------
-    >>> check_symplecticity(np.array([[1, 0], [2, 1]])) # doctest: +SKIP
-    {'is_square': True,
-     'is_symplectic': True,
-     'dim_a': 2,
-     'dim_b': 2,
-     'omega': array([[ 0.,  1.],
-        [-1.,  0.]])}
+    >>> check_symplecticity(np.array([[1, 0], [2, 1]]))
+    {'is_square': True, 'is_symplectic': True, 'dim_a': 2, 'dim_b': 2, 'omega': array([[ 0.,  1.], [-1.,  0.]])}
 
     >>> check_symplecticity(np.array([[3, 4], [2, 5]])) # doctest: +SKIP
-    {'is_square': True,
-     'is_symplectic': False,
+    {'is_square': True, 'is_symplectic': False,
      'dim_a': 2,
      'dim_b': 2,
      'omega': array([[ 0.,  1.],
