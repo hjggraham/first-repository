@@ -14,12 +14,13 @@ def check_symplecticity(matrix, precision=10 ** -12):
         True/False depending on whether it symplectic or not.
     Examples
     --------
-    >>> matrix = np.array([[1, 0], [2, 1]])
-    >>> check_symplecticity(matrix)['is_symplectic']
+    >>> matrix1 = np.array([[1, 0], [2, 1]])
+    >>> check_symplecticity(matrix1)['is_symplectic']
     True
 
-    >>> check_symplecticity(np.array([[3, 4], [2, 5]]))['is_symplectic']
-    True
+    >>> matrix2 = np.array([[3, 4], [2, 5]])
+    >>> check_symplecticity(matrix2)['is_symplectic']
+    False
     """
 
 
