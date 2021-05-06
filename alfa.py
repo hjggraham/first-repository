@@ -14,9 +14,10 @@ def check_symplecticity(matrix, precision=10 ** -12):
         True/False depending on whether it symplectic or not.
     Examples
     --------
-    >>> check_symplecticity(np.array([[1, 0], [2, 1]]))
+    >>> check_symplecticity(np.array([[1, 0], [2, 1]])) # doctest: +SKIP
 
-    >>> check_symplecticity(np.array([[3, 4], [2, 5]]))"""
+    >>> check_symplecticity(np.array([[3, 4], [2, 5]])) # doctest: +SKIP
+    """
 
 
     my_dict = {}
