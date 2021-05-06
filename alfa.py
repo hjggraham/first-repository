@@ -7,37 +7,31 @@ def check_symplecticity(matrix, precision=10 ** -12):
     Parameters
     ----------
     in_value
-        A variable of any type that we want to check is a number.
+        A matrix that we want to check if it is simplectic.
     Returns
     -------
     bool
-        True/False depending on whether it was a number.
+        True/False depending on whether it symplectic or not.
     Examples
     --------
-    >>> is_number(1)
-    True
-    >>> is_number(1.0)
-    True
-    >>> is_number("1")
-    True
-    >>> is_number("1.0")
-    True
-    >>> is_number("Hello")
-    False
-    You can also pass more complex objects, these will all be ``False``.
-    >>> is_number({"hello": "world"})
-    False
-    >>> from datetime import datetime
-    >>> is_number(datetime.now())
-    False
-    Even something which contains all numbers will be ``False``, because it is not itself a number.
-    >>> is_number([1, 2, 3, 4])
-    False'''
+    >>> check_symplecticity(np.array([[1, 0], [2, 1]]))
+    {'is_square': True,
+     'is_symplectic': True,
+     'dim_a': 2,
+     'dim_b': 2,
+     'omega': array([[ 0.,  1.],
+        [-1.,  0.]])}
+    >>> check_symplecticity(np.array([[3, 4], [2, 5]]))
+    {'is_square': True,
+     'is_symplectic': False,
+     'dim_a': 2,
+     'dim_b': 2,
+     'omega': array([[ 0.,  1.],
+        [-1.,  0.]])}'''
 
     my_dict = {}
     my_dict['is_square'] = False
     my_dict['is_symplectic'] = False
-    print("Hello")
 
     try:
         my_dict['dim_a'], my_dict['dim_b'] = np.shape(matrix)
