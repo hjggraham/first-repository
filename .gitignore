@@ -5,3 +5,4 @@ docs/_build/
 .DS_Store
 .ipynb_checkpoints/alfa-checkpoint.py
 __pycache__/alfa.cpython-37.pyc
+.vscode/settings.json
