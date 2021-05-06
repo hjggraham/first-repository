@@ -14,7 +14,8 @@ def check_symplecticity(matrix, precision=10 ** -12):
         True/False depending on whether it symplectic or not.
     Examples
     --------
-    >>> check_symplecticity(np.array([[1, 0], [2, 1]]))['is_symplectic']
+    >>> matrix = np.array([[1, 0], [2, 1]])
+    >>> check_symplecticity(matrix)['is_symplectic']
     True
 
     >>> check_symplecticity(np.array([[3, 4], [2, 5]]))['is_symplectic']
