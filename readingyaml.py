@@ -16,6 +16,9 @@ Examples
 >>> append_yaml({'blue': 'bonjour'}, ('mytest2.yml'))
 # appends the new dictionary to the existing ('mytest2.yml') file.
 
+>>> time_yaml(myfile, hello, first stage)
+# creates a time stamp with a comment, "hello", under the dictionary "first stage" in "myfile"
+
 """
 # load the configuration
 def read_yaml(myfile):
