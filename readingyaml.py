@@ -36,11 +36,13 @@ def append_yaml(my_dict, myfile):
 		yaml = ruamel.yaml.YAML()    
 		yaml.dump(my_dict, file)
 
-def time_yaml(myfile):
+
+def time_yaml(myfile, mycomment, stage):
 	with open(myfile, 'a') as file:
 		yaml = ruamel.yaml.YAML() 
-		my_dict = {}
-		my_dict['hr'] = datetime.datetime.now()
-		my_dict['unix'] = datetime.datetime.now().timestamp()        #in seconds
+		my_dict = {stage: {}}
+		my_dict[stage]['hr'] = datetime.datetime.now()
+		my_dict[stage]['unix'] = datetime.datetime.now().timestamp()        #in seconds
+		my_dict[stage]['mycomment'] = mycomment
 		yaml.dump(my_dict, file)
 
