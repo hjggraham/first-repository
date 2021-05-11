@@ -11,12 +11,18 @@ Alfa
 
 This is code to determine wether a matrix is simplectic.
 
+Readingyaml
+===========
+This is code to read, write and append to yaml files.
+
 Installation
 ------------
 
 .. code-block:: bash
 
    pip install alfa.py
+   
+   pip install readingyaml.pi
    
   
 .. toctree::
