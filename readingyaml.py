@@ -46,3 +46,22 @@ def time_yaml(myfile, mycomment, stage):
 		my_dict[stage]['mycomment'] = mycomment
 		yaml.dump(my_dict, file)
 
+
+def get_last_stage(myfile):
+	try:
+		my_dict=read_yaml(myfile)
+		return list(my_dict.keys())[-1]+1
+	except:
+		return 0
+
+
+def tag1_it(myfile, mycomment):
+	stage = get_last_stage(myfile)
+	with open(myfile, 'a') as file:
+		yaml = ruamel.yaml.YAML() 
+		my_dict = {stage: {}}
+		my_dict[stage]['hr'] = datetime.datetime.now()
+		my_dict[stage]['unix'] = datetime.datetime.now().timestamp()        #in seconds
+		my_dict[stage]['mycomment'] = mycomment
+		yaml.dump(my_dict, file)
+
