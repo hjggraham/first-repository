@@ -4,6 +4,8 @@ import datetime
 """
 read_yaml is to read a yaml file and convert it into python.
 write_yaml is to convert a dictionary into a yaml file.
+append_yaml is to append dictionaries to a yaml file.
+time_yaml is to create timestamps and add them to a yaml file.
 
 Examples
 --------
