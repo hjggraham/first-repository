@@ -11,6 +11,8 @@ Alfa
 
 This is code to determine wether a matrix is simplectic.
 
+Readingyaml
+===========
 
 Installation
 ------------
@@ -18,6 +20,8 @@ Installation
 .. code-block:: bash
 
    pip install alfa.py
+
+   pip install readingyaml.py
    
    
   
