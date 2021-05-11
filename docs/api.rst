@@ -9,4 +9,4 @@ API
 ``readingyaml``
 -------------
 
-.. autofunction:: readingyaml
+.. autofunction:: readingyaml.tag1_it
