@@ -3,14 +3,15 @@ import ruamel.yaml
 import datetime
 
 # load the configuration
-def read_yaml(myfile, verbose=False):
+def read_yaml(myfile, verbose=True):
 	"""
 	read_yaml is to read a yaml file and convert it into python.
 
 	Example
 	--------
 	>>> read_yaml('mytest')
-	# reads 'mytest' and converts it to a dictionary in python.
+	FileNotFoundError, empty dict
+	{}
 	"""
 	try: 
 		with open(myfile, 'r') as file:
@@ -37,7 +38,6 @@ def write_yaml(my_dict, myfile):
 	--------
 
 	>>> write_yaml({'green': 'hello'}, ('mytest2.yml'))
-	# converts a dictionary into yaml file ('mytest2.yml').
 	"""	
 	with open(myfile, 'w') as file:  
 		yaml = ruamel.yaml.YAML()     
@@ -51,7 +51,6 @@ def append_yaml(my_dict, myfile):
 	Examples
 	--------
 	>>> append_yaml({'blue': 'bonjour'}, ('mytest2.yml'))
-	# appends the new dictionary to the existing ('mytest2.yml') file.
 	"""	
 	with open(myfile, 'a') as file:  
 		yaml = ruamel.yaml.YAML()    
@@ -60,6 +59,13 @@ def append_yaml(my_dict, myfile):
 
 
 def get_last_stage(myfile, verbose=True):
+	"""
+	get_last_stage
+
+	Examples
+	--------
+	>>> tag_it('myfile', 'hello')
+	"""	
 	my_dict=read_yaml(myfile, verbose)
 	try:
 		return list(my_dict.keys())[-1]+1
@@ -78,7 +84,6 @@ def tag_it(myfile, mycomment):
 	Examples
 	--------
 	>>> tag_it('myfile', 'hello')
-	# creates a time stamp with a comment, "hello", in "myfile"
 	"""	
 	stage = get_last_stage(myfile)
 	with open(myfile, 'a') as file:
