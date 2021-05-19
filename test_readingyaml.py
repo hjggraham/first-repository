@@ -2,7 +2,7 @@ import readingyaml as ry
 import numpy as np
 import pytest
 import datetime
-import ruamel
+import ruamel.yaml
 from collections import OrderedDict
 
 def test_exeption():
